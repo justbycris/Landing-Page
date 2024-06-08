@@ -1,0 +1,353 @@
+/* Loading Page Styles */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.spinner {
+    border: 12px solid #f3f3f3;
+    border-top: 12px solid #ff6f61;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+    /*---- Typography -----*/ 
+    h1, h2, h3, h4 {
+        font-family: "Playfair Display", serif;
+    }
+    
+    h1 {
+
+        font-size: 5rem;
+        color: #d94eff;
+    }
+    
+    h2 {
+        color: #1e1e1e;
+    }
+    
+    p {
+        font-family: "Lora", serif;
+        color: #1e1e1e;
+    }
+    
+    p.orange-p {
+        font-family: "Lora", serif;
+        color: #fff;
+    }
+    
+    .accent {
+        font-family: "Lato", sans-serif;
+    }
+
+
+.gradient-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(135deg, #2a1a3f,#1e185d, #07051d, #010006);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: starAnimation 5s linear infinite;
+}
+
+@keyframes starAnimation {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px) scale(0);
+        opacity: 0;
+    }
+}
+
+.meteorite {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+    animation: meteoriteAnimation 7s linear infinite;
+}
+
+@keyframes meteoriteAnimation {
+    0% {
+        top: -10px;
+        left: -10px;
+        opacity: 1;
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        top: 100vh;
+        left: 100vw;
+        opacity: 0;
+        transform: translateY(1000px) translateX(1000px) scale(0);
+    }
+}
+
+#section1 {
+    background: linear-gradient(135deg, #0f0c29, #240121, #1b0043, #170120);    
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    
+  font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6f61;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff3f3f;
+}
+
+/* Parallax Sections */
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#section1 {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#section3 {
+    background-image: url('https://via.placeholder.com/1920x1080/61ffb1/333333?text=Our+Services');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax .content {
+    max-width: 600px;
+    padding: 20px;
+  
+    border-radius: 10px;
+}
+
+/* Non-parallax Sections */
+section {
+    padding: 60px 20px;
+}
+
+#section2, #section4 {
+    background-color: #fff;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff3f3f;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px; /* Adjust this value if the navbar height changes */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        display: block;
+    }
+}
