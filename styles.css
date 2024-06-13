@@ -599,8 +599,10 @@ footer p {
     }
     .container-l {
         width: 90%;
-        margin: 0 auto;
-        
+        margin: 0 auto; 
+    }
+    .container-r {
+        width: 100vw;
     }
     .container-l h2, .p-about {
         text-align: center;
@@ -636,8 +638,3 @@ footer p {
     
 }
 
-/* Large devices such as laptops (1024px and up) */
-@media only screen and (max-width: 1024px) {...}
-
-/* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 1280px) {...}
