@@ -30,11 +30,8 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
     color: #333;
     overflow-x: hidden;
-    
-
 }
 
     /*---- Text and Copy -----*/ 
@@ -87,11 +84,38 @@ body {
         font-family: "Lato", sans-serif;
         font-weight:600;
         font-size: 1.8rem;
-        color: #ebb9ff;
+        color: #fbf2ff;
         margin: 40px auto 50px auto;
         line-height: 140%;
         text-transform: uppercase;
         letter-spacing: 2px;
+        
+    }
+
+    .hero-btn  {
+        font-family: "Lato", sans-serif;
+        position: absolute;
+        margin: 0 auto;
+        font-weight: bold;
+        z-index: 1000;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border:2px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        scroll-behavior: smooth; 
+    }
+
+    .hero-btn:hover {
+        background-color: #fff;
+        color:#32004b;
+        font-weight: bold;
+    cursor:pointer;
     }
     
     .accent {
@@ -137,40 +161,7 @@ body {
     }
 }
 
-.meteorite {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
-    animation: meteoriteAnimation 7s linear infinite;
-}
-
-@keyframes meteoriteAnimation {
-    0% {
-        top: -10px;
-        left: -10px;
-        opacity: 1;
-        transform: translateY(0) translateX(0) scale(1);
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 0;
-    }
-    100% {
-        top: 100vh;
-        left: 100vw;
-        opacity: 0;
-        transform: translateY(1000px) translateX(1000px) scale(0);
-    }
-}
-
 #section1 {
-    /* background: linear-gradient(135deg, #0f0c29, #240121, #1b0043, #170120);    
-    background-size: 400% 400%; */
     background-image: url('images/background-gradient-2.png');
     background-size: cover;
     animation: gradientAnimation 15s ease infinite;
@@ -180,6 +171,7 @@ body {
     text-align: center;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 /*------ANIMATIONS AND EFFECTS ----------*/
@@ -305,7 +297,7 @@ body {
     font-weight: bold;
 }
 
-.btn:hover {
+.btn:hover  {
     background-color: #ffffff;
     color:#32004b;
     font-weight: bold;
@@ -543,11 +535,10 @@ footer p {
 }
 
 /*------------ MEDIA BREAKING POINTS --------------*/
-/* Small devices such as large phones (640px and up) */
-@media only screen and (MAX-width: 640px) {...}
+
 
 /* Medium devices such as tablets (768px and up) */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -628,13 +619,13 @@ footer p {
     .work-item, .reverse {
         flex-direction: column !important;
     }
-
     .item-copy {
         width: 50%;
         text-align: center;
         margin: 0 auto;
         width: 90%;
     }
-    
-}
-
+    .space-arrow-down {
+        top: 200px;
+    }
+} 
