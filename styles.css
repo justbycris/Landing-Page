@@ -33,6 +33,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #333;
     overflow-x: hidden;
+
 }
 
     /*---- Text and Copy -----*/ 
@@ -52,15 +53,16 @@ body {
     h2 {
         font-family: "Orbitron", sans-serif;
         font-size: 3.5rem;
-        color:  #2A1F64;
+        color:  #cac0ff;
         text-align: left;
     }
 
     h3 {
         font-family: "Orbitron", sans-serif;
         font-size: 3.5rem;
-        color: #5D34FF;
+        color: #cac0ff;
         text-align: center; 
+        margin: 0 auto 40px auto;
     }
 
     p {
@@ -76,32 +78,24 @@ body {
         text-transform: uppercase;
         letter-spacing: 1px;
         text-align: left;
+        color: #e2dbff;
     }
     
     .hero-copy {
         /* font-family: "Righteous", sans-serif; */
         font-family: "Lato", sans-serif;
-        font-weight:400;
+        font-weight:600;
         font-size: 1.8rem;
-        color: #cfbefc;
+        color: #ebb9ff;
         margin: 40px auto 50px auto;
         line-height: 140%;
         text-transform: uppercase;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
     }
     
     .accent {
         font-family: "Righteous", sans-serif;
     }
-
-.gradient-bg {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: linear-gradient(135deg, #2a1a3f,#2a185d, #0D0149, #030006);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-}
 
 @keyframes gradientAnimation {
     0% {
@@ -174,8 +168,10 @@ body {
 }
 
 #section1 {
-    background: linear-gradient(135deg, #0f0c29, #240121, #1b0043, #170120);    
-    background-size: 400% 400%;
+    /* background: linear-gradient(135deg, #0f0c29, #240121, #1b0043, #170120);    
+    background-size: 400% 400%; */
+    background-image: url('images/background-gradient-2.png');
+    background-size: cover;
     animation: gradientAnimation 15s ease infinite;
     display: flex;
     justify-content: center;
@@ -191,10 +187,10 @@ body {
         text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 60px #ff00ff;
     }
     50% {
-        text-shadow: 0 0 5px #0033ff, 0 0 10px #0033ff, 0 0 20px #0033ff, 0 0 40px #0033ff, 0 0 60px #0033ff;
+        text-shadow: 0 0 5px #4800ff, 0 0 10px #4800ff, 0 0 20px #4800ff, 0 0 40px #4800ff, 0 0 60px #4800ff;
     }
     100% {
-        text-shadow: 0 0 5px #9d00ff, 0 0 10px #9d00ff, 0 0 20px #9d00ff, 0 0 40px #9d00ff, 0 0 60px #9d00ff;
+        text-shadow: 0 0 5px #4800ff, 0 0 10px #4800ff, 0 0 20px #4800ff, 0 0 40px #4800ff, 0 0 60px #4800ff;
     }
 }
 
@@ -313,9 +309,9 @@ body {
 /* Parallax Sections */
 .parallax {
     height: 100vh;
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 #section1 {
@@ -331,7 +327,8 @@ body {
 #section3 {
     /* background: linear-gradient(to bottom, #C8A2C8, #8A2BE2);  */
     /* background-image: url('images/background-gradient.png'); */
-    background: linear-gradient(135deg, #0f0c29, #240121, #1b0043, #170120);  
+    /* background: linear-gradient(135deg, #0f0c29, #240121, #1b0043, #170120);   */
+    background-color: #150029;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,7 +340,7 @@ body {
 
 .parallax .content {
     width: 100%;
-    padding: 50px 20px;
+    padding: 0px 20px 50px 20px;
     border-radius: 10px;
     box-sizing: border-box;
 }
@@ -396,9 +393,11 @@ section {
     padding: 60px 20px;
 }
 
-#section2, #section4 {
-    background-image: url('images/background-gradient.png'); 
-    background-size: cover;
+#section2, #section4, #section5 {
+    /* background-image: url('images/background-gradient.png'); 
+    background-size: cover; */
+    /* background: linear-gradient(135deg, #131032, #240121, #22044f, #170120);   */
+    background: #150029;
     color: #1e1e1e;
     text-align: center;
     padding: 100px 0;
@@ -420,12 +419,11 @@ section {
 .container-c {
     max-width: 800px;
     margin: 0 auto;
-
 }
 
 .container-l {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 0 100px;
     box-sizing: border-box;
     padding: 20px 30px 50px 30px;
     box-sizing: border-box;
@@ -450,11 +448,15 @@ section {
 form {
     display: flex;
     flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
 }
 
 label {
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: left;
+    color: #e5d2ff;
 }
 
 input, textarea {
@@ -482,8 +484,12 @@ button[type="submit"]:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #260645;
     color: #fff;
+}
+
+footer p {
+    color: #e8cfff;
 }
 
 /*------------ MEDIA BREAKING POINTS --------------*/
@@ -540,6 +546,7 @@ footer {
     }
     .container-l {
         width: 90%;
+        margin: 0 auto;
         
     }
     .container-l h2, .p-about {
