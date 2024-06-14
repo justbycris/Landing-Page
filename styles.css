@@ -246,11 +246,12 @@ body {
 .logo {
     font-family: "Orbitron", sans-serif;
     color: #EFECFF;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 800;
 }
 
 .nav-links {
+    font-family: 'Lato', sans-serif;
     list-style: none;
     display: flex;
     margin: 0;
@@ -334,6 +335,7 @@ body {
     text-align: center;
     box-sizing: border-box;
     height: fit-content;
+    padding-top: 80px;
 }
 
 
@@ -393,12 +395,12 @@ section {
 }
 
 #section2, #section4, #section5 {
-   
     background: #150029;
     color: #1e1e1e;
     text-align: center;
     padding: 0;
     height: fit-content;
+    padding-top: 80px;
 }
 
 .row-l {
@@ -446,7 +448,7 @@ section {
 .work-img {
     max-width: 100%;
     width: 600px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .work-item {
@@ -456,7 +458,7 @@ section {
     padding: 20px 0;
     box-sizing: border-box;
     flex-flow: row nowrap;
-    margin: 80px auto;
+    margin: 80px 0;
     align-items: flex-start;
 }
 
@@ -470,6 +472,8 @@ section {
     padding: 20px 25px;
     box-sizing: border-box;
     color: #eae6fc;
+    margin: 0 30px;
+    box-sizing: border-box;
 }
 
 
@@ -482,7 +486,7 @@ h5 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.3rem;
     color: #eae6fc;
-    margin: 10px auto 30px auto;
+    margin: 10px auto 25px auto;
 }
 
 .item-copy p {
@@ -490,7 +494,7 @@ h5 {
     font-size: 16px; 
     color: #eae6fc;
     line-height: 28px; 
-
+    margin-bottom: 35px;
 }
 
 
@@ -555,6 +559,7 @@ footer p {
         position: absolute;
         top: 60px; /* Adjust this value if the navbar height changes */
         left: 0;
+        font-family: 'Lato', sans-serif;
     }
 
     .nav-links.active {
@@ -631,6 +636,6 @@ footer p {
         width: 90%;
     }
     .space-arrow-down {
-        top: 200px;
+        top: 25vh;
     }
 } 
