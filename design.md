@@ -6,10 +6,12 @@ diseno y brand guidelines sobre nuestro sitio web y marca.
 Es importante documentar cambios en el sistema de UI/UX y
 reglas que sean necesarias implementar en el modelo.
 
-## Typografia y fuentes
+## Typografia y Google Fonts
 
-- Heading 1 (h1) [Google font: Orbitron]
+- Headers font: Orbitron
   font-family: "Orbitron", sans-serif;
+- Body Copy: Lato
+- Accent: Righteous
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
