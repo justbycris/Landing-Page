@@ -117,7 +117,7 @@ body {
         background-color: #fff;
         color:#32004b;
         font-weight: bold;
-    cursor:pointer;
+        cursor:pointer;
     }
     
     .accent {
@@ -298,6 +298,7 @@ body {
     transition: background-color 0.3s;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
 
 .btn:hover  {
@@ -326,9 +327,6 @@ body {
 /*------- SECTION 3 SERVICES ------- */
 
 #section3 {
-    /* background: linear-gradient(to bottom, #C8A2C8, #8A2BE2);  */
-    /* background-image: url('images/background-gradient.png'); */
-    /* background: linear-gradient(135deg, #0f0c29, #240121, #1b0043, #170120);   */
     background-color: #150029;
     display: flex;
     justify-content: center;
@@ -448,6 +446,7 @@ section {
 .work-img {
     max-width: 100%;
     width: 600px;
+    margin: 0 auto;
 }
 
 .work-item {
