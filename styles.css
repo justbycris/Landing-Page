@@ -71,7 +71,7 @@ body {
 
     .p-about {
         font-size: 1.4rem;
-        line-height: 34px;
+        line-height: 2.3rem;
         text-align: left;
         width: 100%;
         letter-spacing: 1px;
@@ -430,6 +430,7 @@ section {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 .vertical-line {
@@ -445,7 +446,7 @@ section {
     position: relative;
     display: block;
     font-family: "Orbitron", sans-serif; 
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     font-weight: bold;
     color: #cac0ff;
     letter-spacing: 3px;
