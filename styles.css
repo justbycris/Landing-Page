@@ -349,11 +349,12 @@ h4 {
 
 .item p {
     font-family: "Lato", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     text-align: center;
     text-justify:inter-word;
-  
+    color: #170023;
     position: relative;
+    line-height: 1.9rem;
     
 }
 
